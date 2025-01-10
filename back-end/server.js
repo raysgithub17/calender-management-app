@@ -42,6 +42,18 @@ app.post("/update", (req, res) => {
   res.send("Data updated successfully!");
 });
 
+// Serve the frontend when in production environment
+if (process.env.NODE_ENV === "production") {
+  // Serve static files from the React app
+  app.use(express.static(path.join(__dirname, "../frontend/build")));
+
+  // All other requests return the React app
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "../frontend", "build", "index.html"));
+  });
+}
+
+// Start the backend server
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
