@@ -1,0 +1,89 @@
+/* General Styles */
+.calendar-app {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  color: #4caf50;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.customer-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.action-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 30%;
+}
+
+.action-button:hover {
+  background-color: #45a049;
+}
+
+.remove-button {
+  background-color: #f44336;
+  width: 30%;
+}
+
+.remove-button:hover {
+  background-color: #e53935;
+}
+
+.message-container {
+  margin-top: 20px;
+}
+
+.message {
+  color: #4caf50;
+  font-size: 16px;
+}
+
+.error {
+  color: #f44336;
+  font-size: 16px;
+}
+
+.customer-list {
+  margin-top: 30px;
+}
+
+.customer-item {
+  padding: 10px;
+  background-color: #fff;
+  margin: 5px 0;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.customer-item:nth-child(even) {
+  background-color: #f9f9f9;
+}
